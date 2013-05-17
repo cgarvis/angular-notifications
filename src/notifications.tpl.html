@@ -1,0 +1,7 @@
+<div class="notifications">
+    <div class="alert" ng-class="notification.type && 'alert-' + notification.type" ng-repeat="notification in notifications">
+        <a href="#" class="close" ng-click="remove($index)">&times;</a>
+        <h4 ng-show="notification.title">{{notification.title}}</h4>
+        {{notification.message}}
+    </div>
+</div>
